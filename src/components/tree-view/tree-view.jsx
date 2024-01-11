@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 // @mui
 import { alpha, styled } from "@mui/material/styles";
-import { TreeView, TreeItem, treeItemClasses } from "@mui/lab";
+import { TreeView, TreeItem } from "@mui/lab";
 import Iconify from "../iconify";
 
 // ----------------------------------------------------------------------
@@ -13,18 +13,18 @@ const StyledTreeView = styled(TreeView)({
 });
 
 const StyledTreeItem = styled((props) => <TreeItem {...props} />)(
-	({ theme }) => ({
-		[`& .${treeItemClasses.iconContainer}`]: {
-			"& .close": {
-				opacity: 0.3,
-			},
-		},
-		[`& .${treeItemClasses.group}`]: {
-			marginLeft: 15,
-			paddingLeft: 18,
-			borderLeft: `1px dashed ${alpha(theme.palette.text.primary, 0.4)}`,
-		},
-	})
+	// ({ theme }) => ({
+	// 	[`& .${treeItemClasses.iconContainer}`]: {
+	// 		"& .close": {
+	// 			opacity: 0.3,
+	// 		},
+	// 	},
+	// 	[`& .${treeItemClasses.group}`]: {
+	// 		marginLeft: 15,
+	// 		paddingLeft: 18,
+	// 		borderLeft: `1px dashed ${alpha(theme.palette.text.primary, 0.4)}`,
+	// 	},
+	// })
 );
 
 
